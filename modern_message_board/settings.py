@@ -30,6 +30,7 @@ SECRET_KEY = 'SECRET_KEY'
 DEBUG = True
 
 ALLOWED_HOSTS = ['modernmb.herokuapp.com', 'localhost', 'modernmb-45f157023587.herokuapp.com']
+X_FRAME_OPTIONS = "SAMEORIGIN"
 
 
 # Application definition
@@ -75,6 +76,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'modern_message_board.wsgi.application'
+SITE_ID = 1
 
 
 # Database
