@@ -5,6 +5,7 @@ from cloudinary.models import CloudinaryField
 
 class Category(models.Model):
     name = models.CharField(max_length=25, unique=True)
+    category = forms.ModelChoiceField(queryset=Category.objects.all(), empty_label="(Nothing)")
 
     def __str__(self):
         return self.name
