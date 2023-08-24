@@ -1,108 +1,304 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# modern-message-board
 
-Welcome Tadhg N,
+![Device Mockup Image]()
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## by Tadhg Nolan
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[Live Site](https://modernmb-45f157023587.herokuapp.com/)
 
-## Gitpod Reminders
+# Table of Contents
+1. [Intro](#intro)
+2. [Design](#design)
+3. [Technologies](#technologies)
+4. [Features](#features)
+5. [Testing](#testing)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## Intro
 
-A blue button should appear to click: _Make Public_,
+ - Modern Message Board It is a modern interpretation of 1990's style message boards & forums with some influence drawn from modern websites/apps like Reddit.  
 
-Another blue button should appear to click: _Open Browser_.
+### Design
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### UX
 
-A blue button should appear to click: _Make Public_,
+An Agile methodology was used in planning the project utilising Github's Project kanban.
+[Issues](https://github.com/users/tadhgnolan/projects/2/views/1) were used to create user stories. When work began on a user story, it was moved to the "In Progress" column. When the task is complete, it is moved to the "Done" column.
+A column named Future Features is used for prospective features for the website and for any features that 
+were not complete by the project deadline.
 
-Another blue button should appear to click: _Open Browser_.
+#### UI
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**Wireframe Images**
 
-To log into the Heroku toolbelt CLI:
+---
+![Wireframe Image 1]()
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Wireframe Image 1]()
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![Wireframe Image 1]()
 
 ---
 
-Happy coding!
+#### **Entity Relationship Diagram**
+
+---
+![ERD Image]()
+
+### User Stories
+
+- Account Registration: As a Site User I can register an account so that I can create posts and view other user posts. [#1](https://github.com/tadhgnolan/modern-message-board/issues/1)
+- View List of Posts: As a site user I can view a list of posts so that I can select one to read. [#2](https://github.com/tadhgnolan/modern-message-board/issues/2)
+- Open a Post: As a Site User I can click on a post to read the full text. [#3](https://github.com/tadhgnolan/modern-message-board/issues/3)
+- Manage My Posts: As a Site User I can create , update and delete my posts so that I can manage my content on the website. [#4](https://github.com/tadhgnolan/modern-message-board/issues/4)
+- Category List: As a Site User I can view a list of categories so that I can view posts within. [#5](https://github.com/tadhgnolan/modern-message-board/issues/5)
+- (Admin) Manage Posts: As an Admin I can create, read, update and delete posts so that I can manage content on the website. [#6](https://github.com/tadhgnolan/modern-message-board/issues/6)
+- (Admin) Categories: As a Site Admin I can create, view, update and delete categories on the website. [#7](https://github.com/tadhgnolan/modern-message-board/issues/7)
+- Site Navigation: As a Site User I can easily navigate the site using the navbar or get back to the home page by clicking the logo. [#8](https://github.com/tadhgnolan/modern-message-board/issues/8)
+- Select a Category: As a Site User I can select a topic category when creating a post. [#9](https://github.com/tadhgnolan/modern-message-board/issues/9)
+
+## Technologies
+
+### Languages
+
+- [Python](https://www.python.org/about/)
+- [HTML5](https://dev.w3.org/html5/spec-LC/)
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+
+### Other Technologies and Libraries 
+
+- [GitHub](https://github.com/)
+- [GitPod](https://www.gitpod.io/about/)
+- [Heroku](https://heroku.com)
+- [Django](https://www.djangoproject.com/)
+- [PostgreSQL](https://www.postgresql.org/about/)
+
+## Features 
+
+### Existing Features:
+
+#### **Registration Page - allows new users to register an account with username and password.**
+
+![Registration Page Image]()
+
+#### **Login Page - registered user can login.**
+
+![Login Page Image]()
+
+#### **Home Page - users can view list of posts.**
+
+![Home Page Image]()
+
+#### **Add post - registered users can add new posts, enter a title and select a category from a drop down menu.**
+
+![Add Post Page]()
+
+#### **Update post - registered users can update their existing posts.**
+
+![Update Post Page]()
+
+#### **Delete post - registered users can delete their existing posts.**
+
+![Delete Post Functionality Image]()
+
+#### **Admin functionality - admins can add, update and delete categories.**
+
+![Admin Functionality Image]()
+
+### Features Left to Implement
+-
+-
+-
+## Testing
+
+### Manual testing
+
+- Manually testing each each path. 
+
+---
+**Manual Test of post paths**
+
+---
+![Manual Test Image]()
+
+---
+- ### Repeated real world testing performed with:
+
+### **Google Pixel 3aXL (2160 × 1080px)**
+---  
+![Pixel 3aXL Image 1]()
+![Pixel 3aXL Image 2]()
+
+---
+### **Fairphone 4 (1080 x 2340)**
+---
+![Fairphone 4 Image 1]()
+![Fairphone 4 Image 2]()
+
+---
+### **Lenovo Ideapad Duet Chromebook (1080 x 1200px)**
+---
+**Laptop mode**
+
+![Chromebook Laptop Mode Image 1]()
+![Chromebook Laptop Mode Image 2]()
+
+**Tablet mode**
+
+![Chromebook Tablet Mode Image 1]()
+![Chromebook Tablet Mode Image 2]()
+
+---
+### **Desktop PC (1920 x 1080px + 2560 × 1440) representing a mixture of age plus hardware capability & were readily available.**
+---
+
+**1920 x 1080px**
+
+![1920 x 1080px Image 1]()
+![1920 x 1080px Image 2]()
+
+---
+
+**2560 x 1440px**
+
+![2560 x 1440px Image 1]()
+![2560 x 1440px Image 2]()
+
+---
+
+### In Chrome Dev Tools, tested repeatedly with all available presets
+
+This functionality testing involved:
+
+- Verifying all navbar & other links functioned as expected.
+
+---
+**iPhone X**
+
+---
+![iPhone X Image]()
+
+---
+**Samsung Galaxy S20 Ultra**
+
+---
+![Samsung Galaxy S20 Ultra Image]()
+
+---
+**iPhone 6/7/8**
+
+---
+![iPhone 6/7/8 Image]()
+
+---
+
+- Using Chrome Dev Tools Elements tab to test out small styling changes before adding.
+
+![Dev Tool Styling Image 1]()
+
+![Dev Tool Styling Image 2]()
+
+- Checking that fonts scaled correctly for each display size.
+
+![Font Scaling Image](s)
+
+- Checking for overflow.
+
+**Checked for overflow using [Unicorn Revealer]()**
+
+![Overflow Image]()
+
+
+### Validator Testing 
+
+- Tested html at https://validator.w3.org.
+
+![HTML Validator Image 1]()
+![HTML Validator Image 2]()
+
+- Tested CSS at https://jigsaw.w3.org/css-validator/
+
+![CSS Validator Image]()
+
+### Lighthouse Score
+![Lighthouse Score Image]()
+
+### Unfixed Bugs
+
+## Deployment
+
+The live deployed application can be found at [not read it](https://modernmb-45f157023587.herokuapp.com/).
+
+### Heroku Deployment
+
+This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+Deployment steps are as follows, after account setup:
+
+- Select *New* in the top-right corner of your Heroku Dashboard, and select *Create new app* from the dropdown menu.
+- Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select *Create App*.
+- From the new app *Settings*, click *Reveal Config Vars*, and set the following key/value pairs:
+  - `DATABASE_URL` (this comes from the **Resources** tab, you can get your own Postgres Database using the Free Hobby Tier)
+  - `SECRET_KEY` (this can be any random secret key)
+
+Heroku needs two additional files in order to deploy properly.
+- requirements.txt
+- Procfile
+
+You can install this project's requirements (where applicable) using: `pip3 install -r requirements.txt`. If you have your own packages that have been installed, then the requirements file needs updated using: `pip3 freeze --local > requirements.txt`
+
+The Procfile can be created with the following command: `echo web: gunicorn modern-message-board.wsgi > Procfile`
+
+For Heroku deployment, follow these steps to connect your GitHub repository to the newly created app:
+
+Either:
+- Select "Automatic Deployment" from the Heroku app.
+
+Or:
+- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a <app_name>` (replace app_name with your app, without the angle-brackets)
+- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type: `git push heroku main`
+
+The frontend terminal should now be connected and deployed to Heroku.
+
+### Local Deployment
+
+*Gitpod* IDE was used to write the code for this project.
+
+To make a local copy of this repository, you can clone the project by typing the follow into your IDE terminal:
+- `git clone https://github.com/tadhgnolan/modern-message-board`
+
+You can install this project's requirements (where applicable) using: `pip3 install -r requirements.txt`.
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/tadhgnolan/modern-message-board)
+
+Additionally, you'll need to create your own `env.py` file with the following keys:
+
+- `SECRET_KEY` (can be any secret value)
+- `DATABASE_URL` (this comes from the "Resources" tab on your Heroku app)
+   
+   
+
+## Credits 
+
+ - A social media site designed by Tadhg Nolan
+ 
+### Content 
+
+- [Django Blog](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/12_final_deployment) Used and modified code from this Github repository.
+
+### Sites Used
+
+- [Stack Overflow](https://stackoverflow.com/)
+- [W3Schools](https://www.w3schools.com/)
+- [r/python](https://www.reddit.com/r/Python/)
+- [Reddit](https://www.reddit.com/)
+
+### Special Thanks
+
+- Cormac Nolan - Feedback and advice.
+- Martina Terlevic & Tim Nelson - Mentors.
