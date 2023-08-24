@@ -5,16 +5,19 @@ from cloudinary.models import CloudinaryField
 
 class Category(models.Model):
     name = models.CharField(max_length=25, unique=True)
-    category = forms.ModelChoiceField(queryset=Category.objects.all(), empty_label="(Nothing)")
 
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name_plural = "Categories"
+
 
 class Post(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     title = models.CharField(max_length=200)
-
-    category = models.ForeignKey(Category, on_delete=SET_NULL)
+    date = models.DateTimeField(auto_now_add=True)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
