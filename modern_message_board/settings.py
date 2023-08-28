@@ -29,7 +29,9 @@ SECRET_KEY = 'SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['modernmb.herokuapp.com', 'localhost', 'modernmb-45f157023587.herokuapp.com', '8000-tadhgnolan-modernmessag-3nwp07gqlg2.ws-eu104.gitpod.io']
+ALLOWED_HOSTS = ['modernmb.herokuapp.com', 'localhost',
+                 'modernmb-45f157023587.herokuapp.com',
+                 '8000-tadhgnolan-modernmessag-3nwp07gqlg2.ws-eu104.gitpod.io']
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
 
@@ -71,7 +73,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', 
+                'django.template.context_processors.request',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -102,18 +104,6 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'modern_message_board.wsgi.application'
-
-
-
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
