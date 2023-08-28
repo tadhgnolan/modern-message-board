@@ -36,11 +36,46 @@
     <title>ModerMB {% block extra_title %}{% endblock %}</title>
 </head>
 
-<body>
-    Fake navbar
+<body class="d-flex flex-column h-100 main-bg">
+
+    <nav class="navbar navar-expand-lg navbar-light bg-white"></nav>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span class="brand">m<span class="brand">m</span>b<span
+                    class="thin">|ModernMB</span>
+            </span></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Text"
+            aria-controls="navbar-Text" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                {% endif %}
+            </ul>
+            <span class="navbar-text text-muted">
+                mmb - the modern message board
+            </span>
+        </div>
+    </div>
+    </nav>
+
     {% if messages %}
     <section id="alerts">
         {% for msg in messages %}
+        <!-- all django message tags mirror bootstrap, except error/danger -->
         <aside
             class="alert {% if msg.tags == 'error' %}alert-danger{% else %}alert-{{ msg.tags }}{% endif %} text-center"
             role="alert">
@@ -48,13 +83,22 @@
         </aside>
         {% endfor %}
     </section>
+    {% endif %}
     <br>
     <br>
     {% block content %}
     {% endblock %}
     <br>
     <br>
-    Fake Footer
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 dark-bg">
+        <p class="m-0 text-center text-white">Made by Tadhg Nolan</p>
+        <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
+            <i class="fab fa-twitter-square ms-3"></i>
+            <i class="fab fa-instagram-square ms-3"></i>
+            <i class="fab fa-youtube-square ms-3"></i></p>
+    </footer>
+
 </body>
 
 </html>
