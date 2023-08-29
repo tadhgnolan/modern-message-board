@@ -47,7 +47,7 @@ were not complete by the project deadline.
 #### **Entity Relationship Diagram**
 
 ---
-![ERD Image]()
+![ERD Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/erd.png)
 
 ### User Stories
 
