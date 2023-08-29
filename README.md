@@ -193,7 +193,7 @@ This functionality testing involved:
 **iPhone 6/7/8**
 
 ---
-![iPhone 6/7/8 Image]()
+![iPhone 6/7/8 Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/iphone_6_7_8.png)
 
 ---
 
