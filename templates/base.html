@@ -6,6 +6,9 @@
 
 
     <meta charset="UTF-8">
+    <meta name="description" content="a space for discourse">
+    <meta name="keywords" content="modern-messge-board. posts, conversations, categories">
+    <meta name="author" content="Tadhg Nolan">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -40,6 +43,7 @@
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
+
     <nav class="navbar navar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'posts' %}"><span class="brand">m<span class="brand">m</span>b<span
@@ -54,21 +58,21 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'posts' %}">Home</a>
                     </li>
-
+                    {% if user.is_authenticated %}
                     {% if user.is_superuser %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'categories' %}">Categories</a>
                     </li>
-
+                    {% endif %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Logout</a>
+                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
-
+                    {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
+                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -97,6 +101,7 @@
     {% endblock %}
     <br>
     <br>
+
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center text-white">Made by Tadhg Nolan</p>
