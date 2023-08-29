@@ -234,6 +234,7 @@ This functionality testing involved:
 
 ### Unfixed Bugs
 [1]Unable to get social media icons to function.
+[2]Unable to get favicon to function.
 
 ## Deployment
 
