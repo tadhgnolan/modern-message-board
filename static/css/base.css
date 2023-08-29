@@ -10,10 +10,19 @@ p {
     word-wrap: normal;
 }
 
+.error-img {
+    width: 50%;
+}
+
+#container404 {
+    text-align: center;
+}
+
 #creator {
     background-color: grey;
     color: black;
 }
+
 
 /* ---------------------- Media Queries */
 

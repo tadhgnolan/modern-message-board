@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon-16x16.png">
+    <link rel="manifest" href="static/images/site.webmanifest">
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <title>404 - Page Not Found</title>
+</head>
+
+<body>
+
+    <main class="container" id="container404">
+        <h1>404 - Page Not Found</h1>
+
+        <img src="static/images/404.png" alt="Dead Link doll" class="error-img">
+
+        <p>The page you have requested cannot be found <a href="{% url 'posts' %}">Please click to go back</a></p>
+    </main>
+
+</body>
+
+</html>
