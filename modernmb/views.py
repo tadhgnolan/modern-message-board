@@ -66,7 +66,7 @@ def update_post(request, id):
 def delete_post(request, id):
     post = get_object_or_404(Post, id=id)
     messages.success(request, "Post deleted")
-    post.delete()     
+    post.delete()
     return redirect(reverse("posts"))
 
 
