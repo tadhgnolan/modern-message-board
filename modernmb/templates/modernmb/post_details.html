@@ -1,25 +1,47 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="container">
 
-{% if request.user|lower == post.user|lower %}
-<a href="{% url 'update_post' post.id %}">Update</a>
-<br>
-<a href="{% url 'delete_post' post.id %}">Delete</a>
-{% endif %}
-<br>
-<br>
-{{post.user}}
-<br>
-{{post.title}}
-<br>
-{{post.category}}
-<br>
-{{post.date}}
-<br>
-{{post.user.first_name}}
-<br>
+    <br>
+    <br>
 
-
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow my-3 mx-2 p-3">
+                <h6>Username:</h6>{{post.user}}
+                <hr>
+                <br>
+                <h6>Title:</h6>{{post.title}}
+                <hr>
+                <br>
+                <h6>Category:</h6>{{post.category}}
+                <hr>
+                <br>
+                <h6 Date Posted:></h6>{{post.date}}
+                <hr>
+                <br>
+                <h6>Content:</h6>
+                <p>{{post.content}}</p>
+                <h6>Name:</h6>{{post.user.first_name}}
+                <hr>
+            </div>
+        </div>
+    </div>
+    <br>
+    {% if request.user|lower == post.user|lower %}
+    <div class="row">
+        <div class="col-12 text-center mx-auto">
+            <a href="{% url 'update_post' post.id %}">Update</a>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-12 text-center mx-auto">
+            <a href="{% url 'delete_post' post.id %}">Delete</a>
+        </div>
+    </div>
+    {% endif %}
+</div>
 
 {% endblock %}
