@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!-- Allows admin to view list of categories and add, update or delete them -->
 <div class="container">
     <div class="row">
         <div class="col-12">
             <div class="card shadow my-3 mx-2 p-3">
                 {% for category in categories %}
+
                 <h5 class="text-center">Category: {{category.name}}</h5>
+                <!-- Checks if user is superuser before allowing them to proceed if true -->
                 {% if request.user.is_superuser %}
                 <div class="row">
                     <div class="col-12 text-center mx-auto">
@@ -22,6 +25,7 @@
                 <hr>
                 {% endfor %}
                 <hr>
+                <!-- Checks if user is superuser before allowing them to proceed if true -->
                 {% if request.user.is_superuser %}
                 <div class="row">
                     <div class="col-12 text-center mx-auto">
