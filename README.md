@@ -205,7 +205,7 @@ This functionality testing involved:
 
 - Checking that fonts scaled correctly for each display size.
 
-![Font Scaling Image](s)
+![Font Scaling Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/font_scaling.gif)
 
 - Checking for overflow.
 
