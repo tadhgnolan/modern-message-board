@@ -1,6 +1,6 @@
 # modern-message-board
 
-![Device Mockup Image]()
+![Device Mockup Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/mockup.png)
 
 ## by Tadhg Nolan
 
