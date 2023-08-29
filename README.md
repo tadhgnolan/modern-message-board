@@ -181,13 +181,13 @@ This functionality testing involved:
 **iPhone X**
 
 ---
-![iPhone XR Image]()
+![iPhone XR Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/iphone_xr.png)
 
 ---
 **Samsung Galaxy S20 Ultra**
 
 ---
-![Samsung Galaxy S20 Ultra Image]()
+![Samsung Galaxy S20 Ultra Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/samsung_s20_ultra.png)
 
 ---
 **iPhone 6/7/8**
