@@ -159,15 +159,15 @@ were not complete by the project deadline.
 
 **1920 x 1080px**
 
-![1920 x 1080px Image 1]()
-![1920 x 1080px Image 2]()
+![1920 x 1080px Image 1](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/pc1080p.png)
+![1920 x 1080px Image 2](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/pc1080p2.png)
 
 ---
 
 **2560 x 1440px**
 
-![2560 x 1440px Image 1]()
-![2560 x 1440px Image 2]()
+![2560 x 1440px Image 1](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/pc1440p.png)
+![2560 x 1440px Image 2](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/pc1440p2.png)
 
 ---
 
@@ -181,7 +181,7 @@ This functionality testing involved:
 **iPhone X**
 
 ---
-![iPhone X Image]()
+![iPhone XR Image]()
 
 ---
 **Samsung Galaxy S20 Ultra**
@@ -218,8 +218,7 @@ This functionality testing involved:
 
 - Tested html at https://validator.w3.org.
 
-![HTML Validator Image 1]()
-![HTML Validator Image 2]()
+![HTML Validator Image 1](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/html_validator.png)
 
 - Tested CSS at https://jigsaw.w3.org/css-validator/
 
