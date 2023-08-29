@@ -26,6 +26,8 @@
 
 An Agile methodology was used in planning the project utilising Github's Project kanban.
 [Issues](https://github.com/users/tadhgnolan/projects/2/views/1) were used to create user stories. When work began on a user story, it was moved to the "In Progress" column. When the task is complete, it is moved to the "Done" column.
+Labels were used to mark priority of issue.
+Milestones were used to set major project objectives.
 A column named Future Features is used for prospective features for the website and for any features that 
 were not complete by the project deadline.
 
@@ -74,6 +76,7 @@ were not complete by the project deadline.
 - [Heroku](https://heroku.com)
 - [Django](https://www.djangoproject.com/)
 - [PostgreSQL](https://www.postgresql.org/about/)
+- [Cloudinary](https://cloudinary.com/documentation)
 
 ## Features 
 
@@ -81,31 +84,31 @@ were not complete by the project deadline.
 
 #### **Registration Page - allows new users to register an account with username and password.**
 
-![Registration Page Image]()
+![Registration Page Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/registration.png)
 
 #### **Login Page - registered user can login.**
 
-![Login Page Image]()
+![Login Page Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/login.png)
 
 #### **Home Page - users can view list of posts.**
 
-![Home Page Image]()
+![Home Page Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/home.png)
 
 #### **Add post - registered users can add new posts, enter a title and select a category from a drop down menu.**
 
-![Add Post Page]()
+![Add Post Page](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/add_post.png)
 
 #### **Update post - registered users can update their existing posts.**
 
-![Update Post Page]()
+![Update Post Page](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/update_post.png)
 
 #### **Delete post - registered users can delete their existing posts.**
 
-![Delete Post Functionality Image]()
+![Delete Post Functionality Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/delete_post.png)
 
 #### **Admin functionality - admins can add, update and delete categories.**
 
-![Admin Functionality Image]()
+![Admin Functionality Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/admin.png)
 
 ### Features Left to Implement
 -
@@ -229,7 +232,7 @@ This functionality testing involved:
 
 ## Deployment
 
-The live deployed application can be found at [not read it](https://modernmb-45f157023587.herokuapp.com/).
+The live deployed application can be found at [modernmb](https://modernmb-45f157023587.herokuapp.com/).
 
 ### Heroku Deployment
 
