@@ -1,14 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow my3 mx-2 p-3">
+                <h2>Update Post</h2>
+                <form action="{% url 'update_post' post.id %}" method="post">
+                    {% csrf_token %}
 
-<h2>Update Post</h2>
-<form action="{% url 'update_post' post.id %}" method="post">
-    {% csrf_token %}
-
-    {{form.as_p}}
-    <button type="submit">Update Post</button>
-</form>
+                    {{form.as_p}}
+                    <div class="row">
+                        <div class="col-12 text-center mx-auto">
+                            <button type="submitx">Update Post</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 {% endblock %}
