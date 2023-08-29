@@ -1,24 +1,43 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="container">
+    {% if request.user.is_authenticated %}
+    <div class="row">
+        <div class="col-12 text-center mx-auto">
+            <a href="{% url 'add_post' %}">Add Post</a>
+        </div>
+    </div>
+    {% endif %}
+    <div class="row">
+        {% for post in posts %}
+        <div class="col-12 col-md-6 col-lg-3 my-5">
+            <div class="card shadow my-3 mx-2 p-3">
+                <h6>Username:</h6>{{post.user}}
+                <hr>
+                <br>
 
-{% for post in posts %}
-{{post.user}}
-<br>
-{{post.title}}
-<br>
-{{post.category}}
-<br>
-{{post.date}}
-<br>
-{{post.user.first.name}}
-<br>
-<a href="{% url 'view_post' post.id %}">View Post</a>
-<hr>
-{% endfor %}
+                <h6>Title:</h6>{{post.title}}
+                <hr>
+                <br>
 
-{% if request.user.is_authenticated %}
-<a href="{% url 'add_post' %}">Add Post</a>
-{% endif %}
+                <h6>Category:</h6>{{post.category}}
+                <hr>
+                <br>
+
+                <h6>Date Posted:</h6>{{post.date}}
+                <br>
+
+                <h6>Name</h6>{{post.user.first.name}}
+                <br>
+
+                <a href="{% url 'view_post' post.id %}">View Post</a>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
 
 {% endblock %}
