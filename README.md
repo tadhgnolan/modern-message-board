@@ -229,7 +229,11 @@ This functionality testing involved:
 ### Lighthouse Score
 ![Lighthouse Score Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/lighthouse_score.png)
 
+### Resolved bugs
+[1]((https://github.com/tadhgnolan/modern-message-board/issues/10))No attribute bug caused by syntax errors. 
+
 ### Unfixed Bugs
+[1]Unable to get social media icons to function.
 
 ## Deployment
 
