@@ -26,8 +26,8 @@ def view_post(request, id):
 
 @login_required
 def add_post(request):
-    form = PostForm(request.Post or None)
-    if request.method == "Post":
+    form = PostForm(request.POST or None)
+    if request.method == "POST":
         if form.is_valid():
             form.instance.user = request.user
             form.save()
@@ -45,14 +45,14 @@ def add_post(request):
 @login_required
 def update_post(request, id):
     post = get_object_or_404(Post, id=id)
-    form = PostForm(request.Post or None, instance=post)
-    if request.method == "Post":
+    form = PostForm(request.POST or None, instance=post)
+    if request.method == "POST":
         if form.is_valid():
             form.instance.user = request.user
             form.save()
             messages.success(request, "Post updated")
             return redirect(reverse("posts"))
-        messages.error(request, "Error, Try again.")
+        messages.error(request, "Error. Try again.")
 
     template = "modernmb/update_post.html"
     context = {
@@ -66,31 +66,32 @@ def update_post(request, id):
 def delete_post(request, id):
     post = get_object_or_404(Post, id=id)
     messages.success(request, "Post deleted")
-    post.delete()       
+    post.delete()     
     return redirect(reverse("posts"))
-
-    @login_required
-    def add_category(request):
-        if not request.user.is_superuser:
-            messages.error(request, "Invalid user permission")
-            return redirect(reverse("posts"))
-        form = CategoryForm(request.POST or None)
-        if request.method == "POST":
-            if form.is_valid():
-                form.save()
-                messages.success(request, "Category added")
-                return redirect(reverse("categories"))
-            messages.error(request, "Error. Try again.")
-
-        template = "modernmb/add_category.html"
-        context = {
-            "form": form,
-        }
-        return render(request, template, context)
 
 
 @login_required
-def update_category(request_id):
+def add_category(request):
+    if not request.user.is_superuser:
+        messages.error(request, "Invalid user permission")
+        return redirect(reverse("posts"))
+    form = CategoryForm(request.POST or None)
+    if request.method == "POST":
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Category added")
+            return redirect(reverse("categories"))
+        messages.error(request, "Error. Try again.")
+
+    template = "modernmb/add_category.html"
+    context = {
+        "form": form,
+    }
+    return render(request, template, context)
+
+
+@login_required
+def update_category(request, id):
     if not request.user.is_superuser:
         messages.error(request, "Invalid user permission")
         return redirect(reverse("posts"))
@@ -112,7 +113,7 @@ def update_category(request_id):
 
 
 @login_required
-def delete_category(request_id):
+def delete_category(request, id):
     if not request.user.is_superuser:
         messages.error(request, "Invalid user permission")
         return redirect(reverse("posts"))
