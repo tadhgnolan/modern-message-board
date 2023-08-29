@@ -199,9 +199,9 @@ This functionality testing involved:
 
 - Using Chrome Dev Tools Elements tab to test out small styling changes before adding.
 
-![Dev Tool Styling Image 1]()
+![Dev Tool Styling Image 1](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/dev_tools.png)
 
-![Dev Tool Styling Image 2]()
+![Dev Tool Styling Image 2](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/dev_tools_2.png)
 
 - Checking that fonts scaled correctly for each display size.
 
