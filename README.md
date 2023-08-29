@@ -111,9 +111,9 @@ were not complete by the project deadline.
 ![Admin Functionality Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/admin.png)
 
 ### Features Left to Implement
--
--
--
+- User Comments - Allow users to comment on their and other users posts.
+- Post Images - Add the ability for users to post images.
+
 ## Testing
 
 ### Manual testing
@@ -124,7 +124,7 @@ were not complete by the project deadline.
 **Manual Test of post paths**
 
 ---
-![Manual Test Image]()
+![Manual Test Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/add_post.gif)
 
 ---
 - ### Repeated real world testing performed with:
