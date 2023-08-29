@@ -150,8 +150,8 @@ were not complete by the project deadline.
 
 **Tablet mode**
 
-![Chromebook Tablet Mode Image 1]()
-![Chromebook Tablet Mode Image 2]()
+![Chromebook Tablet Mode Image 1](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/chromebooktblt.png)
+![Chromebook Tablet Mode Image 2](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/chromebooktblt2.png)
 
 ---
 ### **Desktop PC (1920 x 1080px + 2560 × 1440) representing a mixture of age plus hardware capability & were readily available.**
