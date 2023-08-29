@@ -32,13 +32,13 @@
     {% if request.user|lower == post.user|lower %}
     <div class="row">
         <div class="col-12 text-center mx-auto">
-            <a href="{% url 'update_post' post.id %}">Update</a>
+            <a class="btn btn-outline-success" role="button" href="{% url 'update_post' post.id %}">Update</a>
         </div>
     </div>
     <br>
     <div class="row">
         <div class="col-12 text-center mx-auto">
-            <a href="{% url 'delete_post' post.id %}">Delete</a>
+            <a class="btn btn-outline-danger" role="button" href="{% url 'delete_post' post.id %}">Delete</a>
         </div>
     </div>
     {% endif %}
