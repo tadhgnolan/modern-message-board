@@ -209,9 +209,9 @@ This functionality testing involved:
 
 - Checking for overflow.
 
-**Checked for overflow using [Unicorn Revealer]()**
+**Checked for overflow using [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)**
 
-![Overflow Image]()
+![Overflow Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/unicorn.png)
 
 
 ### Validator Testing 
@@ -220,12 +220,14 @@ This functionality testing involved:
 
 ![HTML Validator Image 1](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/html_validator.png)
 
+2 errors found. One not relevant due to django. Corrected second error.
+
 - Tested CSS at https://jigsaw.w3.org/css-validator/
 
-![CSS Validator Image]()
+![CSS Validator Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/css_validator.png)
 
 ### Lighthouse Score
-![Lighthouse Score Image]()
+![Lighthouse Score Image](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/lighthouse_score.png)
 
 ### Unfixed Bugs
 
