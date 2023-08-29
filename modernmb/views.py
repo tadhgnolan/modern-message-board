@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from .models import Post, Category
 from .forms import PostForm, CategoryForm
 
-
+# View for posts/home page.
 def get_posts(request):
     posts = Post.objects.all()
     template = "modernmb/posts.html"
@@ -14,7 +14,7 @@ def get_posts(request):
     }
     return render(request, template, context)
 
-
+# View showing post details.
 def view_post(request, id):
     post = get_object_or_404(Post, id=id)
     template = "modernmb/post_details.html"
@@ -23,7 +23,7 @@ def view_post(request, id):
     }
     return render(request, template, context)
 
-
+# View for adding a new post.
 @login_required
 def add_post(request):
     form = PostForm(request.POST or None)
@@ -42,6 +42,7 @@ def add_post(request):
     return render(request, template, context)
 
 
+# View for updating post.
 @login_required
 def update_post(request, id):
     post = get_object_or_404(Post, id=id)
@@ -61,7 +62,7 @@ def update_post(request, id):
     }
     return render(request, template, context)
 
-
+# Confirmation message on post deletion.
 @login_required
 def delete_post(request, id):
     post = get_object_or_404(Post, id=id)
@@ -70,6 +71,7 @@ def delete_post(request, id):
     return redirect(reverse("posts"))
 
 
+# View for adding new category.
 @login_required
 def add_category(request):
     if not request.user.is_superuser:
@@ -90,6 +92,7 @@ def add_category(request):
     return render(request, template, context)
 
 
+# View for updating category.
 @login_required
 def update_category(request, id):
     if not request.user.is_superuser:
@@ -112,6 +115,7 @@ def update_category(request, id):
     return render(request, template, context)
 
 
+# Confirmation message on category deletion.
 @login_required
 def delete_category(request, id):
     if not request.user.is_superuser:
@@ -123,6 +127,7 @@ def delete_category(request, id):
     return redirect(reverse("categories"))
 
 
+# View of categories for admin.
 @login_required
 def categories(request):
     if not request.user.is_superuser:

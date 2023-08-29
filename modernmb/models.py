@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
-
+# Category model.
 class Category(models.Model):
     name = models.CharField(max_length=25, unique=True)
 
@@ -12,7 +12,7 @@ class Category(models.Model):
     class Meta:
         verbose_name_plural = "Categories"
 
-
+# Post model.
 class Post(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     title = models.CharField(max_length=200)

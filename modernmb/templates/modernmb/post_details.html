@@ -30,7 +30,7 @@
         </div>
     </div>
     <br>
-    <!-- Checks if request user is original poster and, if so, allows them to update or delete post -->
+    <!-- Checks if request user is original poster and, if so, allows them to update or delete post. -->
     {% if request.user|lower == post.user|lower %}
     <div class="row">
         <div class="col-12 text-center mx-auto">
