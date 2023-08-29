@@ -17,10 +17,11 @@ SECRET_KEY = 'SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+X_FRAME_OPTIONS = "SAMEORIGIN"
+
 ALLOWED_HOSTS = ['modernmb.herokuapp.com', 'localhost',
                  'modernmb-45f157023587.herokuapp.com',
                  '8000-tadhgnolan-modernmessag-3nwp07gqlg2.ws-eu104.gitpod.io']
-X_FRAME_OPTIONS = "SAMEORIGIN"
 
 
 # Application definition
