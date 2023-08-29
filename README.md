@@ -145,8 +145,8 @@ were not complete by the project deadline.
 ---
 **Laptop mode**
 
-![Chromebook Laptop Mode Image 1]()
-![Chromebook Laptop Mode Image 2]()
+![Chromebook Laptop Mode Image 1](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/chromebookdsk.png)
+![Chromebook Laptop Mode Image 2](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/chromebookdsk2.png)
 
 **Tablet mode**
 
