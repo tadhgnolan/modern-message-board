@@ -137,8 +137,8 @@ were not complete by the project deadline.
 ---
 ### **Fairphone 4 (1080 x 2340)**
 ---
-![Fairphone 4 Image 1]()
-![Fairphone 4 Image 2]()
+![Fairphone 4 Image 1](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/fairphone_4.jpg)
+![Fairphone 4 Image 2](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/fairphone_4_2.jpg)
 
 ---
 ### **Lenovo Ideapad Duet Chromebook (1080 x 1200px)**
