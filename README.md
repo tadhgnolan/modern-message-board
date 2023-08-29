@@ -131,8 +131,8 @@ were not complete by the project deadline.
 
 ### **Google Pixel 3aXL (2160 × 1080px)**
 ---  
-![Pixel 3aXL Image 1]()
-![Pixel 3aXL Image 2]()
+![Pixel 7 Image 1](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/pixel_7.png)
+![Pixel 7 Image 2](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/pixel_7_2.png)
 
 ---
 ### **Fairphone 4 (1080 x 2340)**
