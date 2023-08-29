@@ -36,11 +36,11 @@ were not complete by the project deadline.
 **Wireframe Images**
 
 ---
-![Wireframe Image 1]()
+![Wireframe Image 1](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/wireframe_1.png)
 
-![Wireframe Image 1]()
+![Wireframe Image 1](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/wireframe_2.png)
 
-![Wireframe Image 1]()
+![Wireframe Image 1](https://github.com/tadhgnolan/modern-message-board/blob/main/static/documentation/images/wireframe_3.png)
 
 ---
 
